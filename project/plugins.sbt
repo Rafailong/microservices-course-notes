@@ -1,0 +1,1 @@
+addSbtPlugin("io.github.jonas" % "sbt-paradox-material-theme" % "0.6.0")
