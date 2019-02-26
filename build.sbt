@@ -8,12 +8,12 @@ lazy val root = (project in file(".")).
   enablePlugins(ParadoxPlugin).
   enablePlugins(ParadoxMaterialThemePlugin).
   settings(
-    name := "Hello Project",
+    name := "notes-on-microservices-architecture-course",
     Compile / paradoxMaterialTheme := {
       ParadoxMaterialTheme()
         .withColor("blue-grey", "cyan")
         .withFont("Inconsolata", "Inconsolata")
-        .withCopyright("Copyleft © Rafael Avila")
+        .withCopyright("Copyleft - Rafael Avila")
         .withLogoIcon("device_hub")
         .withLanguage(java.util.Locale.ENGLISH)
         .withRepository(uri("https://github.com/Rafailong/microservices-course-notes"))
