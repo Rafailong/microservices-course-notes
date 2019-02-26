@@ -11,8 +11,12 @@ lazy val root = (project in file(".")).
     name := "Hello Project",
     Compile / paradoxMaterialTheme := {
       ParadoxMaterialTheme()
-        .withColor("red", "orange")
-        .withLogoIcon("cloud")
-        .withCopyright("Copyleft © Jonas Fonseca")
+        .withColor("blue-grey", "cyan")
+        .withFont("Inconsolata", "Inconsolata")
+        .withCopyright("Copyleft © Rafael Avila")
+        .withLogoIcon("device_hub")
+        .withLanguage(java.util.Locale.ENGLISH)
+        .withRepository(uri("https://github.com/Rafailong/microservices-course-notes"))
+        .withLogoUri(uri("https://raw.githubusercontent.com/jrouaix/Mutopic/master/icon.png"))
     }
   )
