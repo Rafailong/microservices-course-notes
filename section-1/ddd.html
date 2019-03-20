@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="microservices-course-notes">
+<meta name="generator" content="Paradox, paradox-material-theme=, mkdocs-material=3.0.3">
+
+<meta name="lang:clipboard.copy" content="Copy to clipboard">
+<meta name="lang:clipboard.copied" content="Copied to clipboard">
+<meta name="lang:search.language" content="">
+<meta name="lang:search.pipeline.stopwords" content="true">
+<meta name="lang:search.pipeline.trimmer" content="true">
+<meta name="lang:search.result.none" content="No matching documents">
+<meta name="lang:search.result.one" content="1 matching document">
+<meta name="lang:search.result.other" content="# matching documents">
+<meta name="lang:search.tokenizer" content="">
+
+
+<meta name="description" content="microservices-course-notes">
+<link rel="shortcut icon" href="../">
+<title>Domain-Driven Design · Notes on Microservices Architecture course</title>
+<link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+<link rel="stylesheet" href="../lib/material__tabs/dist/mdc.tabs.min.css">
+<link rel="stylesheet" href="../lib/prettify/prettify.css">
+<script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+<link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+<link rel="stylesheet" href="../assets/fonts/material-icons.css">
+<link rel="stylesheet" href="../assets/stylesheets/paradox-material-theme.css">
+</head>
+<body
+>
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a href="../index.html" title="Notes on Microservices Architecture course" class="md-header-nav__button md-logo">
+<img src="../" width="24" height="24">
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
+Notes on Microservices Architecture course
+</span>
+<span class="md-header-nav__topic">
+Domain-Driven Design
+</span>
+</div>
+</div>
+<form name="search" style="display: none">
+<input type="text" name="query">
+</form>
+</div>
+</nav>
+</header>
+
+<div class="md-container">
+<main class="md-main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0" style="visibility: hidden">
+<label class="md-nav__title md-nav__title--site" for="drawer">
+<a href="../index.html" title="Notes on Microservices Architecture course" class="md-nav__button md-logo">
+<span class="md-nav__button md-logo">
+<img src="../" width="24" height="24">
+</a>
+<a href="../index.html" title="Notes on Microservices Architecture course">
+Notes on Microservices Architecture course
+</a>
+</label>
+<ul>
+  <li><a href="../section-1/index.html" class="page">Diving into Microservices</a>
+  <ul>
+    <li><a href="../section-1/definition-of-microservices.html" class="page">Definition of Microservices</a></li>
+    <li><a href="../section-1/dribing-forces-and-conway-law.html" class="page">Driving forces and Conway&rsquo;s Law</a></li>
+    <li><a href="../section-1/coupling-and-cohesion.html" class="page">Coupling and Cohesion</a></li>
+    <li><a href="../section-1/ddd.html" class="active page">Domain-Driven Design</a></li>
+  </ul></li>
+</ul>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul>
+  <li><a href="../section-1/ddd.html#domain-driven-design" class="header">Domain-Driven Design</a>
+  <ul>
+    <li><a href="../section-1/ddd.html#ddd-dictionary" class="header">DDD-dictionary</a></li>
+    <li><a href="../section-1/ddd.html#bounded-context" class="header">Bounded Context</a></li>
+    <li><a href="../section-1/ddd.html#why-pairing-ddd-and-msa-micro-services-architecture-" class="header">Why pairing DDD and MSA (Micro-services Architecture)</a></li>
+  </ul></li>
+</ul>
+</nav>
+
+</nav>
+<ul style="display: none">
+<li class="md-nav__item md-version" id="project.version">
+<label class="md-nav__link" for="__version">
+<i class="md-icon" title="Version">label_outline</i> 0.1
+</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul>
+  <li><a href="../section-1/ddd.html#domain-driven-design" class="header">Domain-Driven Design</a>
+  <ul>
+    <li><a href="../section-1/ddd.html#ddd-dictionary" class="header">DDD-dictionary</a></li>
+    <li><a href="../section-1/ddd.html#bounded-context" class="header">Bounded Context</a></li>
+    <li><a href="../section-1/ddd.html#why-pairing-ddd-and-msa-micro-services-architecture-" class="header">Why pairing DDD and MSA (Micro-services Architecture)</a></li>
+  </ul></li>
+</ul>
+</nav>
+
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<div class="md-content__searchable">
+<h1><a href="#domain-driven-design" name="domain-driven-design" class="anchor"><span class="anchor-link"></span></a>Domain-Driven Design</h1>
+<p>To me <strong>Domain Driven Design</strong> is a software modeling/design approach that help us to:</p>
+<ol>
+  <li>reduce the complexity of our software</li>
+  <li>discover the core model of our system</li>
+  <li>and finally and most important, at least to me, DDD help us to understand the problem we as software engineers will help to solve</li>
+</ol>
+<p>Our job as software developers is to solve problem (when we are not saying inappropriate comments of course) and the problem we help to solve are in the core of other people job/life. So before even trying to get a a perfect software architecture design we MUST understand the problem we will help to solve, and there is no better way to do so than listening to the people who lives in their day-to-day with such a problem, the domain experts.</p>
+<p><img src="../assets/images/section-1-image-4.jpg" alt="understand the problem before trying to solve it" /></p>
+<h2><a href="#ddd-dictionary" name="ddd-dictionary" class="anchor"><span class="anchor-link"></span></a>DDD-dictionary</h2>
+<ul>
+  <li>Domain: a subject matters that we are building software on. Sphere of knowledge to which users apply the software</li>
+  <li>Entity: a unique thing that has a life cycle and can change state, it carries a concept of identity</li>
+  <li>Value:  an immutable object that describes some characteristic or attribute but carries no concept of identity</li>
+  <li>Repository: mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects</li>
+  <li>Service: an operation offered as an interface that stands alone in the model, with no encapsulated state</li>
+  <li>Aggregate:  a cluster of domain objects that can be treated as a single unit to provide a specific functionality and for the purpose of data changes. An aggregate will have one of its component objects be the aggregate root</li>
+</ul>
+<p><img src="../assets/images/section-1-image-5.png" alt="ddd in a picture" /></p>
+<h2><a href="#bounded-context" name="bounded-context" class="anchor"><span class="anchor-link"></span></a>Bounded Context</h2>
+<p>Bounded contexts are the Single Responsibility Principle applied to your domain model. Each part of your system has its intelligence, data, and vocabulary. Each part is independent of one another.</p>
+<p><img src="../assets/images/section-1-image-6.png" alt="bounded context" /></p>
+<h2><a href="#why-pairing-ddd-and-msa-micro-services-architecture-" name="why-pairing-ddd-and-msa-micro-services-architecture-" class="anchor"><span class="anchor-link"></span></a>Why pairing DDD and MSA (Micro-services Architecture)</h2>
+<p>DDD and MSA make such a great couple because of:</p>
+<ol>
+  <li>DDD places the focus on the business domain so it can help us define the boundaries of responsibility for each micro-service</li>
+  <li>and because of DDD make a huge emphasis in communication it can help to model the organization we are trying to help</li>
+</ol>
+<hr/>
+<ol>
+  <li><a href="http://dddcommunity.org/learning-ddd/what_is_ddd/">What is DDD?</a></li>
+  <li><a href="https://www.youtube.com/watch?v=U6CeaA-Phqo">Domain Driven Design: The Good Parts - Jimmy Bogard</a></li>
+  <li><a href="https://www.eventstorming.com/">Event Storming</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/">Tackle Business Complexity in a Microservice with DDD and CQRS Patterns</a></li>
+</ol>
+</div>
+<div>
+<a href="https://github.com/Rafailong/microservices-course-notes/tree/v0.1/src/paradox/section-1/ddd.md" title="Edit this page" class="md-source-file md-edit">
+Edit this page
+</a>
+</div>
+<div class="print-only">
+<span class="md-source-file md-version">
+0.1
+</span>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a href="../section-1/coupling-and-cohesion.html" title="Coupling and Cohesion" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
+Previous
+</span>
+Coupling and Cohesion
+</span>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+Powered by
+<a href="https://github.com/lightbend/paradox">Paradox</a>
+and
+<a href="https://jonas.github.io/paradox-material-theme/">Paradox Material Theme</a>
+
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+<script src="../assets/javascripts/application.583bbe55.js"></script>
+<script src="../assets/javascripts/paradox-material-theme.js"></script>
+<script>app.initialize({version:"0.17",url:{base:"../."}})</script>
+<script type="text/javascript" src="../lib/prettify/prettify.js"></script>
+<script type="text/javascript" src="../lib/prettify/lang-scala.js"></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+window.prettyPrint && prettyPrint();
+});
+</script>
+</body>
+</html>

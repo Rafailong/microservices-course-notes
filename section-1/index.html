@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="microservices-course-notes">
+<meta name="generator" content="Paradox, paradox-material-theme=, mkdocs-material=3.0.3">
+
+<meta name="lang:clipboard.copy" content="Copy to clipboard">
+<meta name="lang:clipboard.copied" content="Copied to clipboard">
+<meta name="lang:search.language" content="">
+<meta name="lang:search.pipeline.stopwords" content="true">
+<meta name="lang:search.pipeline.trimmer" content="true">
+<meta name="lang:search.result.none" content="No matching documents">
+<meta name="lang:search.result.one" content="1 matching document">
+<meta name="lang:search.result.other" content="# matching documents">
+<meta name="lang:search.tokenizer" content="">
+
+
+<meta name="description" content="microservices-course-notes">
+<link rel="shortcut icon" href="../">
+<title>Diving into Microservices · Notes on Microservices Architecture course</title>
+<link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+<link rel="stylesheet" href="../lib/material__tabs/dist/mdc.tabs.min.css">
+<link rel="stylesheet" href="../lib/prettify/prettify.css">
+<script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+<link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+<link rel="stylesheet" href="../assets/fonts/material-icons.css">
+<link rel="stylesheet" href="../assets/stylesheets/paradox-material-theme.css">
+</head>
+<body
+>
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a href="../index.html" title="Notes on Microservices Architecture course" class="md-header-nav__button md-logo">
+<img src="../" width="24" height="24">
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
+Notes on Microservices Architecture course
+</span>
+<span class="md-header-nav__topic">
+Diving into Microservices
+</span>
+</div>
+</div>
+<form name="search" style="display: none">
+<input type="text" name="query">
+</form>
+</div>
+</nav>
+</header>
+
+<div class="md-container">
+<main class="md-main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0" style="visibility: hidden">
+<label class="md-nav__title md-nav__title--site" for="drawer">
+<a href="../index.html" title="Notes on Microservices Architecture course" class="md-nav__button md-logo">
+<span class="md-nav__button md-logo">
+<img src="../" width="24" height="24">
+</a>
+<a href="../index.html" title="Notes on Microservices Architecture course">
+Notes on Microservices Architecture course
+</a>
+</label>
+<ul>
+  <li><a href="../section-1/index.html" class="active page">Diving into Microservices</a>
+  <ul>
+    <li><a href="../section-1/definition-of-microservices.html" class="page">Definition of Microservices</a></li>
+    <li><a href="../section-1/dribing-forces-and-conway-law.html" class="page">Driving forces and Conway&rsquo;s Law</a></li>
+    <li><a href="../section-1/coupling-and-cohesion.html" class="page">Coupling and Cohesion</a></li>
+    <li><a href="../section-1/ddd.html" class="page">Domain-Driven Design</a></li>
+  </ul></li>
+</ul>
+<nav class="md-nav md-nav--secondary">
+</nav>
+
+</nav>
+<ul style="display: none">
+<li class="md-nav__item md-version" id="project.version">
+<label class="md-nav__link" for="__version">
+<i class="md-icon" title="Version">label_outline</i> 0.1
+</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<div class="md-content__searchable">
+<h1><a href="#diving-into-microservices" name="diving-into-microservices" class="anchor"><span class="anchor-link"></span></a>Diving into Microservices</h1>
+<div class="toc ">
+<ul>
+  <li><a href="../section-1/definition-of-microservices.html" class="page">Definition of Microservices</a></li>
+  <li><a href="../section-1/dribing-forces-and-conway-law.html" class="page">Driving forces and Conway&rsquo;s Law</a>
+  <ul>
+    <li><a href="../section-1/dribing-forces-and-conway-law.html#driving-forces" class="header">Driving forces</a></li>
+    <li><a href="../section-1/dribing-forces-and-conway-law.html#conways-law" class="header">Conway&rsquo;s Law</a></li>
+  </ul></li>
+  <li><a href="../section-1/coupling-and-cohesion.html" class="page">Coupling and Cohesion</a></li>
+  <li><a href="../section-1/ddd.html" class="page">Domain-Driven Design</a>
+  <ul>
+    <li><a href="../section-1/ddd.html#ddd-dictionary" class="header">DDD-dictionary</a></li>
+    <li><a href="../section-1/ddd.html#bounded-context" class="header">Bounded Context</a></li>
+    <li><a href="../section-1/ddd.html#why-pairing-ddd-and-msa-micro-services-architecture-" class="header">Why pairing DDD and MSA (Micro-services Architecture)</a></li>
+  </ul></li>
+</ul>
+</div>
+</div>
+<div>
+<a href="https://github.com/Rafailong/microservices-course-notes/tree/v0.1/src/paradox/section-1/index.md" title="Edit this page" class="md-source-file md-edit">
+Edit this page
+</a>
+</div>
+<div class="print-only">
+<span class="md-source-file md-version">
+0.1
+</span>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a href="../index.html" title="Notes on Microservices Architecture course" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
+Previous
+</span>
+Notes on Microservices Architecture course
+</span>
+</div>
+</a>
+<a href="../section-1/definition-of-microservices.html" title="Definition of Microservices" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
+Next
+</span>
+Definition of Microservices
+</span>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+Powered by
+<a href="https://github.com/lightbend/paradox">Paradox</a>
+and
+<a href="https://jonas.github.io/paradox-material-theme/">Paradox Material Theme</a>
+
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+<script src="../assets/javascripts/application.583bbe55.js"></script>
+<script src="../assets/javascripts/paradox-material-theme.js"></script>
+<script>app.initialize({version:"0.17",url:{base:"../."}})</script>
+<script type="text/javascript" src="../lib/prettify/prettify.js"></script>
+<script type="text/javascript" src="../lib/prettify/lang-scala.js"></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+window.prettyPrint && prettyPrint();
+});
+</script>
+</body>
+</html>
